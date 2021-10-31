@@ -1,0 +1,84 @@
+Question:
+1) Difference between Browser JS(console) v Nodejs
+Answer:
+
+i) Browser JS(console)
+a)window is a predefined global object which has functions and attributes,
+   that have to deal with window that has been drawn. 
+b)location is another predefined object in browsers, 
+   that has all the information about the url we have loaded.
+c)document, which is also another predefined global variable in browsers,
+   has the html which is rendered.
+d)Browsers may have an object named global, but it will be the exact one as “window”.
+e)Moduling is not mandatory in client side JavaScript, i.e. in browsers.
+
+ii) Nodejs
+a)Node doesn’t have a predefined window object cause it doesn’t have a window 
+  to draw anything.
+b)location object is related to a particular url that means it is for page specific. 
+  So, node doesn’t require that.
+c)Ofcourse Node doesn’t have document object also, cause it never have to render 
+  anything in a page.
+d)Node has global, which is a predefined global object. 
+e)It contains several functions that are not available in browsers, 
+  cause they are needed for server side works only.
+
+Question:
+2) Browser rendering a website
+Answer:
+
+i)Parsing HTML
+a)HTML is forgiving by nature.
+b)HTML isn't straight forward.
+c)Can be Halted.
+d)Will do speculative parsing
+e)It's reentrant.
+
+ii)script tag at the bottom
+a)Parse uninterepted.
+b)Faster to render.
+c)defer and async attributes.
+d)Trade off.
+
+iii)DOM Node to Render Object
+a)Visual Output.
+b)Geometric info.
+c)Can layout and paint.
+d)Holds style and computed metrics
+
+iv)Calculating Visual Properties
+a)Combining all styles
+b)defaults,external,style elements and inline
+c)Complexity around matching rules from each element
+d)Style computation
+
+v)Inline critical CSS
+a)The most important bits of your site/app
+b)Speeds up first paint times
+c)External Js and css can block
+d)Delta Last Bitmap
+
+Question:
+3)typeof Operator/Function
+Answer:
+
+Definition: 
+The typeof operator is a unary operator that is placed before its single operand,
+which can be of any type.The typeof operator evaluates to "number", "string" or "boolean"
+if its operand is a number, string, or boolean value and returns true or false 
+based on the evaluation.
+
+a) typeof(1)  //returns, 'number' 
+b) typeof(1.1) //returns, 'number' 
+c) typeof('1.1') //returns, 'string' 
+d) typeof(true) //returns, 'boolean' 
+e) typeof(null) //returns, 'object' 
+f) typeof(undefined) //returns, 'undefined' 
+g) typeof([]) //returns, 'object' 
+h) typeof({}) //returns, 'object' 
+i) typeof(NaN) //returns, 'number'
+
+
+
+
+
